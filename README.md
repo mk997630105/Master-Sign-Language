@@ -12,7 +12,7 @@ This application is designed to help deaf-mute to communicate with normal people
 - [User Manual](#user-manual)
     - [Before Running This Application](#before-running-this-application)
     - [Run This Application](#run-this-application)
-    - [Demo Video](#demo-video)
+- [Demo Video](#demo-video)
  <!-- markdown-toc end -->
 
 # Introduction
@@ -54,8 +54,8 @@ The master sign language can help deaf-mute to communicate with normal people.
    - 1 AD converter(PmodAD2)
    - 1 OLED display module(SSD1306)
    - 1 Voice recognition module(YS-LDV7)
-   - 1 GPS(C3-470A)
-   - 1 GPRS(SIM900A)
+   - 1 GPS module(C3-470A)
+   - 1 GPRS module(SIM900A)
    - 1 SD Card
    
 ## Required Software
@@ -64,11 +64,11 @@ The master sign language can help deaf-mute to communicate with normal people.
 
 ## Hardware Connection
    1. The EMSK implement smart gloves,it will processe the data collected by sensors and translate gestures to corresponding sign language, we can get the corresponding sign language information by displaying text and making voice.
-      - Connect JY-901 to J1(Using UART interface)
-      - Connect SYN6288,PmodAD2 and SIM900A to J4(Using I2C interface)
-      - Connect C3-470A to J5(Using UART interface)
-      - Connect SSD1306 to J2(Using I2C interface)
-      - Connect YS-LDV7 to J3
+      - Connect **Posture sensor** to **J1**(Using UART interface)
+      - Connect **Voice composite module**, **AD converter** and **GPRS module** to **J4**(Using I2C interface)
+      - Connect **GPS module** to **J5**(Using UART interface)
+      - Connect **OLED display module** to **J2**(Using I2C interface)
+      - Connect **Voice recognition module** to **J3**
    2. Configure your EMSKs with proper core configuration
    - EMSK connection
    ![image](https://github.com/mk997630105/Master-Sign-Language/blob/master/Screenshots/connection.jpg)
@@ -134,7 +134,7 @@ line 107: change
 | gprs             | send position information                          |
 | judge            | match the collected data with the sample database  |
 
-## Demo Video
+# Demo Video
 [Link](http://v.youku.com/v_show/id_XMzYyNzM2NTc1Mg==.html?spm=a2h3j.8428770.3416059.1)
 
 
