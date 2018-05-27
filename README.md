@@ -44,7 +44,7 @@ The master sign language can help deaf-mute to communicate with normal people.
    As shown in the figure below, the system consists of **three parts: input, master, and output**.
    - The **input** include collecting gesture data,recognizing the voice of normal people and positioning the location of the user.
    - The **master** is composed of an ARC processor. It mainly performs data processing and matching with a gesture library according to an algorithm, and sends a corresponding command to the output terminal at the same time.
-   - The **output** include senging message to guardian.
+   - The **output** include displaying the corresponding text,playing the corresponding voice and senging message to guardian.
    ![image](https://github.com/mk997630105/Master-Sign-Language/blob/master/Screenshots/Architecture.PNG)
 # Hardware and Software Setup
 ## Required Hardware   
